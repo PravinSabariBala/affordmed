@@ -23,7 +23,7 @@ app.get('/numbers', async (req, res) => {
                 mergedNumbers.push(...response.data.numbers);
             }
         } catch (error) {
-            // Ignore URLs that take too long to respond
+            console.log(error)
         }
     });
 
